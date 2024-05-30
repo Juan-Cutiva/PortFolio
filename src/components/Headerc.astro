@@ -1,0 +1,24 @@
+---
+import Stars from '../../public/svg/Stars.astro';
+import Bag from '../../public/BG/Bag.astro';
+---
+
+<div  class="flex h-20 w-auto justify-between bg-[#1A0B2E] p-5">
+	<Bag />
+	<section class="pl- flex items-center justify-between sm:pl-[315px]">
+		<Stars class="size-[36px] sm:size-[56px]" />
+	</section>
+	
+	<section
+		class="mx-4 flex flex-nowrap items-center justify-end gap-[80px] pr-[220px] text-[14px] text-white sm:text-[16px]"
+	>
+		<a href="#inicio" class="hover:text-[#ad25c5b9]">Inicio</a>
+		<a href="#proyectos" class="hover:text-[#ad25c5b9]">Proyectos</a>
+		<a href="#sobreMi" class="hover:text-[#ad25c5b9]">Sobre mi</a>
+	</section>
+	<style>
+		a {
+			font-family: 'Plus Jakarta Sans Variable', sans-serif;
+		}
+	</style>
+</div>
