@@ -8,7 +8,7 @@ const { href, nombre } = Astro.props;
 ---
 
 <button>
-	<h1>{Astro.props.nombre}</h1>
+	<a href={Astro.props.href}>{Astro.props.nombre}</a>
 	<div class="star-1">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
