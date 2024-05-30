@@ -3,16 +3,16 @@ import Stars from '../../public/svg/Stars.astro';
 import Button from './Button.astro';
 ---
 
-<div class="flex h-20 w-auto justify-between bg-[#1A0B2E] p-5 z-20 animate-fade-in">
+<div class="z-20 flex h-20 w-auto animate-fade-in justify-between bg-[#1A0B2E] p-5">
 	<section class="flex items-center justify-between sm:pl-[315px]">
-		<Stars class="size-[36px] sm:size-[56px] hover:scale-125 duration-300"/>
+			<Stars class="size-[36px] duration-300 hover:scale-125 sm:size-[56px]" />
 	</section>
 	<section
-		class="mx-4 flex flex-nowrap justify-end gap-[30px]  text-[14px] text-white sm:text-[16px]">
-		<Button href="#inicio" nombre="Inicio"></Button>
-		<Button href="#proyectos" nombre="Proyectos"></Button>
-		<Button href="#sobreMi" nombre="Sobre mi"></Button>
-
+		class="mx-4 flex flex-nowrap justify-end gap-[30px] text-[14px] text-white sm:text-[16px]"
+	>
+		<Button href="#inicio" nombre="Inicio" />
+		<Button href="#proyectos" nombre="Proyectos" />
+		<Button href="#sobreMi" nombre="Sobre mi" />
 	</section>
 
 	<style>
