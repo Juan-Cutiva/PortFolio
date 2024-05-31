@@ -2,13 +2,15 @@
 import Gradient from '../../public/svg/Gradient.astro';
 import Rectangle1 from '../../public/svg/Rectangle 1.astro';
 import Puntero from '../../public/svg/Puntero.astro';
+import ImgMo from '../../public/svg/ImgMo.astro';
 ---
 
 <section id="proyectos">
 	<div class="parent">
 		<div class="div1"><Gradient /></div>
-		<div class="h-[360px] w-[640px]" id="div2">
-				<img class="rounded-xl" src="../../public/svg/ImgMo.svg" alt="ImgMokepon">
+		<div class="h-[360px] w-[640px] rounded-xl" id="div2">
+				<!-- <img class="rounded-xl" src="../../public/svg/ImgMo.svg" alt="ImgMokepon"> -->
+				<ImgMo/>
 		</div>
 		<div class="div3">
 			<section>
@@ -40,6 +42,9 @@ import Puntero from '../../public/svg/Puntero.astro';
 	</div>
 
 	<style>
+		ImoMo{
+			border-radius: 10px;
+		}
 		.parent {
 			display: grid;
 			grid-template-columns: repeat(6, 1fr);
@@ -53,6 +58,7 @@ import Puntero from '../../public/svg/Puntero.astro';
 		}
 		#div2 {
 			grid-area: 2 / 4 / 6 / 7;
+			border-radius: 10px;
 		}
 		.div3 {
 			grid-area: 3 / 1 / 5 / 5;
