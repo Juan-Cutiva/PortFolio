@@ -1,27 +1,45 @@
 ---
+import { ClassificationType } from 'typescript';
 import Gradient from '../../public/svg/Gradient.astro';
+import Rectangle1 from '../../public/svg/Rectangle 1.astro';
+import Puntero from '../../public/svg/Puntero.astro';
 ---
 
 <section id="proyecto">
 	<div class="parent">
 		<div class="div1"><Gradient /></div>
 		<div class="div2">
-			<img class="h-[360px] w-[640px] rounded-[10px]" src="/public/png/mokepon.png" alt="img" />
+			<a href="https://mokeponcuti.netlify.app/" target="_blank" rel="noopener noreferrer">
+				<img class="h-[360px] w-[640px] rounded-[10px]" src="/public/png/mokepon.png" alt="img" />
+			</a>
 		</div>
 		<div class="div3">
-			<section class="border-2 border-[#ccd6f62a] rounded-2xl blur-sm ">
-                <img class="h-[160px] w-[600px] absolute" src="/public/png/noise.png" alt="">
-                <div class="h-[160px] w-[600px] bg-[#ccd6f64d] blur-md rounded-2xl">
-					<h2 class="text-black">lor</h2>
-                </div>
-            </section>
+			<section>
+				<Rectangle1 class="flex-end relative mt-0 flex flex-col-reverse items-center"
+					>Hola</Rectangle1
+				>
+			</section>
 		</div>
 		<div class="div4">
-			<h2 class="flex  justify-center pl-24 text-[34px]  text-[#CCD6F6] pt-6">
-				Mokepon
-			</h2>
+			<h2 class="flex justify-center pl-24 pt-6 text-[34px] text-[#CCD6F6]">Mokepon</h2>
 		</div>
 		<div class="div5"></div>
+		<div class="div6">
+			<h2 class="text-white">
+				Este es un juego en el cual podrás elegir entre Capipepo, Ratigueya o Hipodoge, es un juego
+				co el cual podrás jugar contra la maquina o contra otra persona, este juego lo realize
+				haciendo el curso de <a
+					class="inline-flex text-[#93C33D] duration-200 hover:scale-105"
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://platzi.com/cursos/programacion-basica/">programación básica</a
+				> de Platzi.
+			</h2>
+		</div>
+		<div class="div7"> <a class="inline-flex duration-200 hover:scale-105"
+			target="_blank"
+			rel="noopener noreferrer"
+			href="https://mokeponcuti.netlify.app/"><Puntero/></a></div>
 	</div>
 
 	<style>
@@ -51,6 +69,19 @@ import Gradient from '../../public/svg/Gradient.astro';
 		}
 		.div5 {
 			grid-area: 1 / 1 / 2 / 2;
+		}
+		.div6 {
+			grid-area: 3 / 2 / 4 / 4;
+		}
+		.div6 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.div7 {
+			grid-area: 4 / 2 / 5 / 2;
+			display: flex;
+			padding-top: 24px;
 		}
 	</style>
 </section>
