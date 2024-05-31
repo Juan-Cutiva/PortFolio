@@ -1,7 +1,142 @@
 ---
-import Component2 from '../../public/svg/Component 2.astro';
+import Git from '../../public/svg/Git.astro';
+import Css from '../../public/svg/Css.astro';
+import Figma from '../../public/svg/Figma.astro';
+import Javascript from '../../public/svg/Javascript.astro';
+import Html5 from '../../public/svg/Html5.astro';
+import Tailwindcss from '../../public/svg/Tailwindcss.astro';
+import Mame from '../../public/svg/Mame.astro';
+import Github from '../../public/svg/Github.astro';
+import Npm from '../../public/svg/Npm.astro';
+import Vector from '../../public/svg/Vector.astro';
 ---
 
-<section class="flex justify-center items-center pt-24">
-	<Component2 />
+<section class="pt-24">
+	<div
+		id="div10"
+		class="flex h-14 w-auto items-center justify-center text-[30px] text-white"
+	>
+		<h3>Tecnologías que manejo</h3>
+	</div>
+
+	<div id="parent" class="relative flex items-center justify-center">
+		<a
+			href="https://git-scm.com/"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div1"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+			><Git />
+		</a>
+		<a
+			href="https://www.figma.com/"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div2"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+			><Figma />
+		</a>
+		<a
+			href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div3"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+		>
+			<Javascript />
+		</a>
+		<a
+			href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div4"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+		>
+			<Html5 />
+		</a>
+		<a
+			href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div5"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+		>
+			<Css /></a
+		>
+		<a
+			href="https://tailwindcss.com/"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div6"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+		>
+			<Tailwindcss /></a
+		>
+		<a
+			href="https://astro.build/"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div7"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+		>
+			<Mame /></a
+		>
+		<a
+			href="https://github.com/"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div8"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+		>
+			<Github /></a
+		>
+		<a
+			href="https://www.npmjs.com/"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="div9"
+			class="flex h-auto w-auto items-center justify-center hover:scale-125"
+		>
+			<Npm /></a
+		>
+	</div>
+	<div id="div11" class="flex h-8 w-auto items-center justify-center pb-[400px]"><Vector /></div>
 </section>
+
+<style>
+	#parent {
+		display: grid;
+		grid-template-columns: repeat(11, 50px);
+		grid-template-rows: repeat(8, 50px);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+
+	#div1 {
+		grid-area: 3 / 2 / 4 / 3;
+	}
+	#div2 {
+		grid-area: 3 / 3 / 4 / 4;
+	}
+	#div3 {
+		grid-area: 3 / 4 / 4 / 5;
+	}
+	#div4 {
+		grid-area: 3 / 5 / 4 / 6;
+	}
+	#div5 {
+		grid-area: 3 / 6 / 4 / 7;
+	}
+	#div6 {
+		grid-area: 3 / 7 / 4 / 8;
+	}
+	#div7 {
+		grid-area: 3 / 8 / 4 / 9;
+	}
+	#div8 {
+		grid-area: 3 / 9 / 4 / 10;
+	}
+	#div9 {
+		grid-area: 3 / 10 / 4 / 11;
+	}
+</style>
