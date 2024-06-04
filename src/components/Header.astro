@@ -4,15 +4,15 @@ import Button from './Button.astro';
 ---
 
 <div class="z-20 flex h-20 w-auto animate-fade-in justify-between bg-[#1A0B2E] p-5">
-	<a href="../pages/" class="flex items-center justify-between sm:pl-[315px]">
+	<a href="#inicio" class="flex items-center justify-between sm:pl-[315px]">
 			<Stars class="size-[36px] duration-300 hover:scale-125 sm:size-[56px]" />
 	</a>
 	<section
 		class="mx-4 flex flex-nowrap justify-end gap-[30px] text-[14px] text-white sm:text-[16px]"
 	>
-		<a href="#inicio"><Button href="#inicio" nombre="Inicio" /></a>
 		<Button href="#proyectos" nombre="Proyectos" />
 		<Button href="#sobreMi" nombre="Sobre mi" />
+		<Button href='#contacto' nombre="Contacto"/>
 	</section>
 
 	<style>
