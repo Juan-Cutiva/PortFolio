@@ -5,18 +5,18 @@ import Persona from '../../public/svg/Person.astro';
 ---
 
 <body id="inicio">
-    <div class="absolute pt-[76px] pl-[450px] animate-fade-in">
-        <Arrow />
-    </div>
-	<div id="Home" class="w-226px h-8 pl-[276px] pt-[90px] animate-fade-in">
+	<div class="absolute animate-fade-in pl-[450px] pt-[76px]">
+		<Arrow />
+	</div>
+	<div id="Home" class="w-226px h-8 animate-fade-in pl-[276px] pt-[90px]">
 		<Persona />
 	</div>
 
-	<div class="pl-[557px] pt-[10px] text-[14px] animate-fade-in">
-		<h1 class="text-currentColor">Hola! yo soy <span class="text-[#7127BA] ">Juan Cutiva</span></h1>
+	<div class="animate-fade-in pl-[557px] pt-[10px] text-[14px]">
+		<h1 class="text-currentColor">Hola! yo soy <span class="text-[#7127BA]">Juan Cutiva</span></h1>
 	</div>
 
-	<section class="pl-[537px] pt-10 text-white animate-fade-in">
+	<section class="animate-fade-in pl-[537px] pt-10 text-white">
 		<h3 class="text-[14px] underline decoration-1">Un Programador Que</h3>
 		<div class="absolute pl-[335px] pt-[53px]"><Ellipse /></div>
 		<h1 class="pl-[7px] text-[45px]">
@@ -24,8 +24,13 @@ import Persona from '../../public/svg/Person.astro';
 			>...
 		</h1>
 		<h5 class="pl-[72px] text-[12px]">¿Si yo no encuentro mi límite, Quién lo hará?</h5>
-		<div class=" pt-4">
-			<a download="JuanDavidCutivaCV.pdf" href="/JuanDavidCutivaCV.pdf" class="flex items-center justify-center w-40 h-10 bg-[#1a0b2e] rounded-xl hover:scale-110 duration-200 border-2 border-[#ad25c5b9]">Descarga mi CV</a>
+		<div class="pt-4">
+			<a
+				download="JuanDavidCutivaCV.pdf"
+				href="/JuanDavidCutivaCV.pdf"
+				class="flex h-10 w-40 items-center justify-center rounded-xl border-2 border-[#ad25c5b9] bg-[#1a0b2e] duration-200 hover:scale-110"
+				>Descarga mi CV</a
+			>
 		</div>
 	</section>
 </body>
